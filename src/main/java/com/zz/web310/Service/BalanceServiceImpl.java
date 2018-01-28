@@ -1,8 +1,7 @@
-package com.zz.mall.service.balance.Impl;
+package com.zz.web310.Service;
 
-import com.zz.mall.service.balance.IBalanceService;
-import com.zz.mall.entity.AccountBalance;
-import com.zz.mall.repo.AccountBalanceRepo;
+import com.zz.web310.entity.AccountBalance;
+import com.zz.web310.repo.AccountBalanceRepo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +19,8 @@ public class BalanceServiceImpl implements IBalanceService {
 
     @Override
     public AccountBalance deposit(String accountName, BigDecimal amount) {
+        // formatter string.format(), e.g.  String.format("..%s.", "XXXX"), same with C Language
+        // {} === String.format(%s object.toString) 不是真的toString , logback 自动遍历(基础类型)
         LOGGER.info("Now, deposit [{}]'s account, amount=[{}]", accountName, amount.doubleValue());
         AccountBalance accountBalance = accountBalanceRepo.findByAccountName(accountName);
         BigDecimal balance = accountBalance.getBalance();

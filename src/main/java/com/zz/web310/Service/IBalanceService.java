@@ -1,6 +1,6 @@
-package com.zz.mall.service.balance;
+package com.zz.web310.Service;
 
-import com.zz.mall.entity.AccountBalance;
+import com.zz.web310.entity.AccountBalance;
 
 import java.math.BigDecimal;
 

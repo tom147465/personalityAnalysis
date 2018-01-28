@@ -33,7 +33,9 @@ public class PengYouQuanController {
     // 1.controller
     // 2.service
     // 3.repo
-
+    // spring 做 ioc aop
+    // Hibernate 做 持久化
+    // Jpa 规范
 
     // http 规范中 delete option  no params
     // url 来描述资源

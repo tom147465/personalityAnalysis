@@ -1,4 +1,4 @@
-package com.zz.mall.entity;
+package com.zz.web310.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
