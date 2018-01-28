@@ -1,0 +1,47 @@
+23:07:48.413 [main] INFO  com.zz.web310.Run - Starting Run v1.0-SNAPSHOT on Libo with PID 14220 (E:\JetBrains\web01\target\web01-1.0-SNAPSHOT.jar started by Bo in E:\JetBrains\web01\target)
+23:07:48.428 [main] INFO  com.zz.web310.Run - No active profile set, falling back to default profiles: default
+23:07:48.600 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4534b60d: startup date [Sat Jan 13 23:07:48 EST 2018]; root of context hierarchy
+23:07:49.335 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+23:07:52.086 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$866e1c67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:07:53.579 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+23:07:53.611 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+23:07:53.626 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5
+23:07:53.923 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:07:53.923 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5323 ms
+23:07:54.220 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+23:07:54.236 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+23:07:54.236 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+23:07:54.236 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+23:07:54.236 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+23:07:55.329 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+23:07:55.376 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+23:07:55.564 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+23:07:55.564 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+23:07:55.564 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+23:07:55.767 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+23:07:56.283 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+23:07:57.017 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:07:58.231 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4534b60d: startup date [Sat Jan 13 23:07:48 EST 2018]; root of context hierarchy
+23:07:58.403 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/calculate/add]}" onto public java.lang.Integer com.zz.web310.controller.CalculateController.add(java.lang.Integer,java.lang.Integer)
+23:07:58.403 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/calculate/sum]}" onto public java.lang.Integer com.zz.web310.controller.CalculateController.sum(java.util.List<java.lang.Integer>)
+23:07:58.403 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/calculate/add/{v1}-{v2}]}" onto public java.lang.Integer com.zz.web310.controller.CalculateController.add2(java.lang.Integer,java.lang.Integer)
+23:07:58.419 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/{id}],methods=[DELETE]}" onto public java.lang.Boolean com.zz.web310.controller.MomentController.deleteMoment(java.lang.Integer)
+23:07:58.419 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment],methods=[POST]}" onto public com.zz.web310.entity.Moment com.zz.web310.controller.MomentController.saveMoment(com.zz.web310.entity.Moment)
+23:07:58.419 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/list],methods=[GET]}" onto public java.util.List<com.zz.web310.entity.Moment> com.zz.web310.controller.MomentController.getMoment(java.lang.String)
+23:07:58.419 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/{id}],methods=[GET]}" onto public com.zz.web310.entity.Moment com.zz.web310.controller.MomentController.getMoment(java.lang.Integer)
+23:07:58.419 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/list2],methods=[GET]}" onto public java.util.List<com.zz.web310.entity.Moment> com.zz.web310.controller.MomentController.getMoment2(java.lang.String)
+23:07:58.419 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pyq/info],methods=[POST]}" onto private com.zz.web310.entity.PengYouQuan com.zz.web310.controller.PengYouQuanController.postPengYouQuan(com.zz.web310.entity.PengYouQuan)
+23:07:58.419 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pyq/save],methods=[POST]}" onto public com.zz.web310.entity.PengYouQuan com.zz.web310.controller.PengYouQuanController.savePengYouQuan(com.zz.web310.entity.PengYouQuan)
+23:07:58.434 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+23:07:58.434 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+23:07:58.497 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:07:58.497 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:07:58.606 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:07:59.044 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+23:07:59.075 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:07:59.184 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+23:07:59.262 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+23:07:59.309 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+23:07:59.325 [main] INFO  com.zz.web310.Run - Started Run in 11.772 seconds (JVM running for 13.589)

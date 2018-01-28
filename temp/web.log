@@ -1,0 +1,216 @@
+00:24:32.949 [main] INFO  com.zz.web310.Run - Starting Run on Libo with PID 22320 (E:\JetBrains\web01\target\classes started by Bo in E:\JetBrains\web01)
+00:24:32.962 [main] INFO  com.zz.web310.Run - No active profile set, falling back to default profiles: default
+00:24:33.059 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145b572: startup date [Sun Jan 28 00:24:33 EST 2018]; root of context hierarchy
+00:24:33.279 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+00:24:35.181 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e9bbb170] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:24:35.603 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+00:24:35.613 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+00:24:35.614 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5
+00:24:35.724 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:24:35.724 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2665 ms
+00:24:35.884 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+00:24:35.888 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:24:35.889 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:24:35.889 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:24:35.890 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:24:36.365 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+00:24:36.378 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+00:24:36.449 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+00:24:36.450 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+00:24:36.452 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+00:24:36.505 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+00:24:36.691 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+00:24:37.202 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:24:37.753 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145b572: startup date [Sun Jan 28 00:24:33 EST 2018]; root of context hierarchy
+00:24:37.817 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tryAPI/11]}" onto public void com.zz.web310.controller.AController.add()
+00:24:37.820 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tryAPI/conversation],methods=[POST]}" onto public void com.zz.web310.controller.AController.Conversation(java.lang.String)
+00:24:37.821 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/calculate/add]}" onto public java.lang.Integer com.zz.web310.controller.CalculateController.add(java.lang.Integer,java.lang.Integer)
+00:24:37.821 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/calculate/sum]}" onto public java.lang.Integer com.zz.web310.controller.CalculateController.sum(java.util.List<java.lang.Integer>)
+00:24:37.822 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/calculate/add/{v1}-{v2}]}" onto public java.lang.Integer com.zz.web310.controller.CalculateController.add2(java.lang.Integer,java.lang.Integer)
+00:24:37.824 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/list],methods=[GET]}" onto public java.util.List<com.zz.web310.entity.Moment> com.zz.web310.controller.MomentController.getMoment(java.lang.String)
+00:24:37.824 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/{id}],methods=[GET]}" onto public com.zz.web310.entity.Moment com.zz.web310.controller.MomentController.getMoment(java.lang.Integer)
+00:24:37.824 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment],methods=[POST]}" onto public com.zz.web310.entity.Moment com.zz.web310.controller.MomentController.saveMoment(com.zz.web310.entity.Moment)
+00:24:37.824 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/{id}],methods=[DELETE]}" onto public java.lang.Boolean com.zz.web310.controller.MomentController.deleteMoment(java.lang.Integer)
+00:24:37.824 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/list2],methods=[GET]}" onto public java.util.List<com.zz.web310.entity.Moment> com.zz.web310.controller.MomentController.getMoment2(java.lang.String)
+00:24:37.825 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pyq/save],methods=[POST]}" onto public com.zz.web310.entity.PengYouQuan com.zz.web310.controller.PengYouQuanController.savePengYouQuan(com.zz.web310.entity.PengYouQuan)
+00:24:37.826 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pyq/info],methods=[POST]}" onto private com.zz.web310.entity.PengYouQuan com.zz.web310.controller.PengYouQuanController.postPengYouQuan(com.zz.web310.entity.PengYouQuan)
+00:24:37.828 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+00:24:37.828 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+00:24:37.863 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:24:37.863 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:24:37.901 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:24:38.198 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+00:24:38.217 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:24:38.229 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+00:24:38.243 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+00:24:38.263 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+00:24:38.270 [main] INFO  com.zz.web310.Run - Started Run in 5.901 seconds (JVM running for 7.28)
+00:25:13.894 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+00:25:13.894 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+00:25:13.921 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+00:25:14.769 [http-nio-8080-exec-1] INFO  okhttp3.OkHttpClient - --> POST https://gateway.watsonplatform.net/conversation/api/v1/workspaces/4b3374ad-f5de-4e06-bc6c-efde5651a555/message?version=2017-05-26 http/1.1 (26-byte body)
+00:25:14.936 [http-nio-8080-exec-1] INFO  okhttp3.OkHttpClient - <-- 200 OK https://gateway.watsonplatform.net/conversation/api/v1/workspaces/4b3374ad-f5de-4e06-bc6c-efde5651a555/message?version=2017-05-26 (166ms, unknown-length body)
+00:27:50.413 [main] INFO  com.zz.web310.Run - Starting Run on Libo with PID 4832 (E:\JetBrains\web01\target\classes started by Bo in E:\JetBrains\web01)
+00:27:50.417 [main] INFO  com.zz.web310.Run - No active profile set, falling back to default profiles: default
+00:27:50.500 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145b572: startup date [Sun Jan 28 00:27:50 EST 2018]; root of context hierarchy
+00:27:50.800 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+00:27:52.160 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b66eaba8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:27:52.574 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+00:27:52.589 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+00:27:52.590 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5
+00:27:52.709 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:27:52.710 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2210 ms
+00:27:52.876 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+00:27:52.881 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:27:52.881 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:27:52.881 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:27:52.881 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:27:53.348 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+00:27:53.361 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+00:27:53.447 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+00:27:53.448 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+00:27:53.449 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+00:27:53.492 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+00:27:53.695 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+00:27:54.205 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:27:54.734 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145b572: startup date [Sun Jan 28 00:27:50 EST 2018]; root of context hierarchy
+00:27:54.793 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tryAPI/11]}" onto public void com.zz.web310.controller.AController.add()
+00:27:54.795 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tryAPI/conversation],methods=[POST]}" onto public void com.zz.web310.controller.AController.Conversation(java.lang.String)
+00:27:54.797 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/calculate/add]}" onto public java.lang.Integer com.zz.web310.controller.CalculateController.add(java.lang.Integer,java.lang.Integer)
+00:27:54.797 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/calculate/sum]}" onto public java.lang.Integer com.zz.web310.controller.CalculateController.sum(java.util.List<java.lang.Integer>)
+00:27:54.797 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/calculate/add/{v1}-{v2}]}" onto public java.lang.Integer com.zz.web310.controller.CalculateController.add2(java.lang.Integer,java.lang.Integer)
+00:27:54.800 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/list],methods=[GET]}" onto public java.util.List<com.zz.web310.entity.Moment> com.zz.web310.controller.MomentController.getMoment(java.lang.String)
+00:27:54.800 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/{id}],methods=[GET]}" onto public com.zz.web310.entity.Moment com.zz.web310.controller.MomentController.getMoment(java.lang.Integer)
+00:27:54.801 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/{id}],methods=[DELETE]}" onto public java.lang.Boolean com.zz.web310.controller.MomentController.deleteMoment(java.lang.Integer)
+00:27:54.801 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment],methods=[POST]}" onto public com.zz.web310.entity.Moment com.zz.web310.controller.MomentController.saveMoment(com.zz.web310.entity.Moment)
+00:27:54.801 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/list2],methods=[GET]}" onto public java.util.List<com.zz.web310.entity.Moment> com.zz.web310.controller.MomentController.getMoment2(java.lang.String)
+00:27:54.802 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pyq/info],methods=[POST]}" onto private com.zz.web310.entity.PengYouQuan com.zz.web310.controller.PengYouQuanController.postPengYouQuan(com.zz.web310.entity.PengYouQuan)
+00:27:54.803 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pyq/save],methods=[POST]}" onto public com.zz.web310.entity.PengYouQuan com.zz.web310.controller.PengYouQuanController.savePengYouQuan(com.zz.web310.entity.PengYouQuan)
+00:27:54.805 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+00:27:54.806 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+00:27:54.840 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:27:54.840 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:27:54.881 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:27:55.177 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+00:27:55.200 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:27:55.210 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+00:27:55.225 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+00:27:55.244 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+00:27:55.249 [main] INFO  com.zz.web310.Run - Started Run in 5.412 seconds (JVM running for 6.855)
+00:28:12.519 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+00:28:12.519 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+00:28:12.540 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+00:28:13.326 [http-nio-8080-exec-1] INFO  okhttp3.OkHttpClient - --> POST https://gateway.watsonplatform.net/conversation/api/v1/workspaces/4b3374ad-f5de-4e06-bc6c-efde5651a555/message?version=2017-05-26 http/1.1 (26-byte body)
+00:28:13.498 [http-nio-8080-exec-1] INFO  okhttp3.OkHttpClient - <-- 200 OK https://gateway.watsonplatform.net/conversation/api/v1/workspaces/4b3374ad-f5de-4e06-bc6c-efde5651a555/message?version=2017-05-26 (171ms, unknown-length body)
+00:29:02.498 [main] INFO  com.zz.web310.Run - Starting Run on Libo with PID 20620 (E:\JetBrains\web01\target\classes started by Bo in E:\JetBrains\web01)
+00:29:02.502 [main] INFO  com.zz.web310.Run - No active profile set, falling back to default profiles: default
+00:29:02.583 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145b572: startup date [Sun Jan 28 00:29:02 EST 2018]; root of context hierarchy
+00:29:03.126 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+00:29:04.614 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b66eaba8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:29:05.100 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+00:29:05.111 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+00:29:05.111 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5
+00:29:05.215 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:29:05.215 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2632 ms
+00:29:05.371 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+00:29:05.375 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:29:05.376 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:29:05.376 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:29:05.376 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:29:05.858 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+00:29:05.871 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+00:29:05.944 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+00:29:05.946 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+00:29:05.947 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+00:29:05.990 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+00:29:06.177 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+00:29:06.688 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:29:07.205 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2145b572: startup date [Sun Jan 28 00:29:02 EST 2018]; root of context hierarchy
+00:29:07.272 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tryAPI/11]}" onto public void com.zz.web310.controller.AController.add()
+00:29:07.275 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tryAPI/conversation],methods=[POST]}" onto public void com.zz.web310.controller.AController.Conversation(java.lang.String)
+00:29:07.277 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/calculate/add]}" onto public java.lang.Integer com.zz.web310.controller.CalculateController.add(java.lang.Integer,java.lang.Integer)
+00:29:07.277 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/calculate/sum]}" onto public java.lang.Integer com.zz.web310.controller.CalculateController.sum(java.util.List<java.lang.Integer>)
+00:29:07.277 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/calculate/add/{v1}-{v2}]}" onto public java.lang.Integer com.zz.web310.controller.CalculateController.add2(java.lang.Integer,java.lang.Integer)
+00:29:07.280 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/list],methods=[GET]}" onto public java.util.List<com.zz.web310.entity.Moment> com.zz.web310.controller.MomentController.getMoment(java.lang.String)
+00:29:07.281 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/{id}],methods=[GET]}" onto public com.zz.web310.entity.Moment com.zz.web310.controller.MomentController.getMoment(java.lang.Integer)
+00:29:07.281 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/list2],methods=[GET]}" onto public java.util.List<com.zz.web310.entity.Moment> com.zz.web310.controller.MomentController.getMoment2(java.lang.String)
+00:29:07.282 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment],methods=[POST]}" onto public com.zz.web310.entity.Moment com.zz.web310.controller.MomentController.saveMoment(com.zz.web310.entity.Moment)
+00:29:07.282 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/{id}],methods=[DELETE]}" onto public java.lang.Boolean com.zz.web310.controller.MomentController.deleteMoment(java.lang.Integer)
+00:29:07.283 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pyq/info],methods=[POST]}" onto private com.zz.web310.entity.PengYouQuan com.zz.web310.controller.PengYouQuanController.postPengYouQuan(com.zz.web310.entity.PengYouQuan)
+00:29:07.283 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pyq/save],methods=[POST]}" onto public com.zz.web310.entity.PengYouQuan com.zz.web310.controller.PengYouQuanController.savePengYouQuan(com.zz.web310.entity.PengYouQuan)
+00:29:07.285 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+00:29:07.286 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+00:29:07.320 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:29:07.320 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:29:07.358 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:29:07.664 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+00:29:07.684 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:29:07.695 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+00:29:07.713 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+00:29:07.730 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+00:29:07.736 [main] INFO  com.zz.web310.Run - Started Run in 5.881 seconds (JVM running for 7.827)
+00:37:21.584 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+00:37:21.584 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+00:37:21.612 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+00:37:22.423 [http-nio-8080-exec-1] INFO  okhttp3.OkHttpClient - --> POST https://gateway.watsonplatform.net/conversation/api/v1/workspaces/4b3374ad-f5de-4e06-bc6c-efde5651a555/message?version=2017-05-26 http/1.1 (26-byte body)
+00:37:22.599 [http-nio-8080-exec-1] INFO  okhttp3.OkHttpClient - <-- 200 OK https://gateway.watsonplatform.net/conversation/api/v1/workspaces/4b3374ad-f5de-4e06-bc6c-efde5651a555/message?version=2017-05-26 (176ms, unknown-length body)
+00:43:50.279 [main] INFO  com.zz.web310.Run - Starting Run on Libo with PID 22132 (E:\JetBrains\web01\target\classes started by Bo in E:\JetBrains\web01)
+00:43:50.283 [main] INFO  com.zz.web310.Run - No active profile set, falling back to default profiles: default
+00:43:50.409 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39529185: startup date [Sun Jan 28 00:43:50 EST 2018]; root of context hierarchy
+00:43:50.799 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+00:43:52.312 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$934836c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:43:52.734 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+00:43:52.744 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+00:43:52.745 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5
+00:43:52.855 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:43:52.855 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2446 ms
+00:43:53.019 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+00:43:53.023 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+00:43:53.024 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+00:43:53.024 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+00:43:53.024 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+00:43:53.516 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+00:43:53.529 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+00:43:53.614 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+00:43:53.616 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+00:43:53.618 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+00:43:53.660 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+00:43:53.839 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+00:43:54.346 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:43:54.887 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39529185: startup date [Sun Jan 28 00:43:50 EST 2018]; root of context hierarchy
+00:43:54.946 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tryAPI/11]}" onto public void com.zz.web310.controller.AController.add()
+00:43:54.948 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tryAPI/conversation],methods=[POST]}" onto public com.zz.web310.model.ConversationBizResult com.zz.web310.controller.AController.Conversation(java.lang.String)
+00:43:54.950 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/calculate/add]}" onto public java.lang.Integer com.zz.web310.controller.CalculateController.add(java.lang.Integer,java.lang.Integer)
+00:43:54.950 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/calculate/sum]}" onto public java.lang.Integer com.zz.web310.controller.CalculateController.sum(java.util.List<java.lang.Integer>)
+00:43:54.950 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/calculate/add/{v1}-{v2}]}" onto public java.lang.Integer com.zz.web310.controller.CalculateController.add2(java.lang.Integer,java.lang.Integer)
+00:43:54.953 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/{id}],methods=[DELETE]}" onto public java.lang.Boolean com.zz.web310.controller.MomentController.deleteMoment(java.lang.Integer)
+00:43:54.954 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/list],methods=[GET]}" onto public java.util.List<com.zz.web310.entity.Moment> com.zz.web310.controller.MomentController.getMoment(java.lang.String)
+00:43:54.954 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/{id}],methods=[GET]}" onto public com.zz.web310.entity.Moment com.zz.web310.controller.MomentController.getMoment(java.lang.Integer)
+00:43:54.954 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment/list2],methods=[GET]}" onto public java.util.List<com.zz.web310.entity.Moment> com.zz.web310.controller.MomentController.getMoment2(java.lang.String)
+00:43:54.955 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/moment],methods=[POST]}" onto public com.zz.web310.entity.Moment com.zz.web310.controller.MomentController.saveMoment(com.zz.web310.entity.Moment)
+00:43:54.956 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pyq/save],methods=[POST]}" onto public com.zz.web310.entity.PengYouQuan com.zz.web310.controller.PengYouQuanController.savePengYouQuan(com.zz.web310.entity.PengYouQuan)
+00:43:54.956 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pyq/info],methods=[POST]}" onto private com.zz.web310.entity.PengYouQuan com.zz.web310.controller.PengYouQuanController.postPengYouQuan(com.zz.web310.entity.PengYouQuan)
+00:43:54.959 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+00:43:54.959 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+00:43:54.995 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:43:54.995 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:43:55.034 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+00:43:55.335 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+00:43:55.354 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:43:55.365 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+00:43:55.381 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+00:43:55.403 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+00:43:55.410 [main] INFO  com.zz.web310.Run - Started Run in 5.826 seconds (JVM running for 7.343)
+00:44:01.196 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+00:44:01.196 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+00:44:01.216 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+00:44:02.017 [http-nio-8080-exec-1] INFO  okhttp3.OkHttpClient - --> POST https://gateway.watsonplatform.net/conversation/api/v1/workspaces/4b3374ad-f5de-4e06-bc6c-efde5651a555/message?version=2017-05-26 http/1.1 (26-byte body)
+00:44:02.181 [http-nio-8080-exec-1] INFO  okhttp3.OkHttpClient - <-- 200 OK https://gateway.watsonplatform.net/conversation/api/v1/workspaces/4b3374ad-f5de-4e06-bc6c-efde5651a555/message?version=2017-05-26 (164ms, unknown-length body)
